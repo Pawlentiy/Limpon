@@ -320,10 +320,11 @@ h1 {
     max-height: 393px;
 }
 .grid-item p {
-    /*max-width: 270px;*/
+    max-width: 270px;
     font-size: 16px;
     font-weight: 600;
     color: #7e89a7;
+    margin:0 auto;
 }
 .grid-item h3{
     font-size:20px;
@@ -369,6 +370,43 @@ h1 {
 .grid-icon-6 {
     background-image: url(../img/5-icon.png);
     background-size: 85px 90px;
+}
+.page-software-icon {
+    display: block;
+    background-image: url(../img/page-software-icon.png);
+    background-repeat: no-repeat;
+    background-position: -28px 0;
+    width: 127px;
+    height: 98px;
+}
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+.page-software-icon .title-h2 {
+    max-width: 766px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+.page-software-list{
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow: scroll;
+}
+.page-software-list dt {
+    font-weight: 700;  
+    color: #5a6789;  
+    margin-bottom: 10px;
+}
+.page-software-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
 }
 .list-stat {
     display: flex;
@@ -468,6 +506,9 @@ h1 {
 }
 .page-stat, .page-screen {
     background-color: #edf6ff;
+}
+.page-software {
+    padding: 109px 0 156px 0;
 }
 .page-stat {
     padding: 116px 0 96px 0;
