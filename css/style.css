@@ -388,6 +388,9 @@ h1 {
     background-repeat: no-repeat;
     width: 932px;
     height: 755px;
+    position: absolute;
+    left: 0;
+    
 }
 .page-software-icon {
     display: block;
@@ -529,6 +532,7 @@ h1 {
     background-image: url(../img/software-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     
 }
 .page-stat {
