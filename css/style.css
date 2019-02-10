@@ -300,24 +300,41 @@ h1 {
 .grid-text {
     grid-area: h;
 }
+.grid-text p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7e89a7;
+}
+.grid-text span {
+    font-weight: bold;
+}
+.grid-text a {
+    color: #1085e4;
+    letter-spacing: -1px;
+}
 .grid h2{
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    margin:0 auto;
+    margin-bottom: 14px;
 }
 .grid h2 span {
     font-size: 14px;
     color: #1085e4;
     display: block;
     font-weight: 800;
+    letter-spacing: 2.9px;
+    margin-bottom: 17px;
 }
 .grid-item {
     text-align: center;
-    /*box-shadow: 0 0 5px #f4f4f4;*/
-    box-shadow: 0 0 5px red;
-    
+    box-shadow: 0 0 5px #f4f4f4;
+    /*box-shadow: 0 0 5px red;*/
     max-width: 350px;
     max-height: 393px;
+    padding-top: 51px;
+    padding-bottom: 59px;
 }
 .grid-item p {
     max-width: 270px;
@@ -325,6 +342,8 @@ h1 {
     font-weight: 600;
     color: #7e89a7;
     margin:0 auto;
+    letter-spacing: -0.2px;
+    margin-bottom: 14px;
 }
 .grid-item h3{
     font-size:20px;
@@ -341,35 +360,34 @@ h1 {
 .grid-icon {
     background-repeat: no-repeat;
     display: block;
-    height: 92;
+    height: 92px;
     margin: 0 auto 21px;
     background-position: center;
 }
 .grid-icon-1 {
     background-image: url(../img/2-icon.png);
-    background-size: 73px 79px;
-    height: 100px;
-    width: 100px;
 }
 .grid-icon-2 {
     background-image: url(../img/3-icon.png);
-    background-size: 89px 85px;
 }
 .grid-icon-3 {
     background-image: url(../img/1-icon.png);
-    background-size: 73px 79px;
 }
 .grid-icon-4 {
     background-image: url(../img/6-icon.png);
-    background-size: 109px 92px;
 }
 .grid-icon-5 {
     background-image: url(../img/4-icon.png);
-    background-size: 85px 90px;
 }
 .grid-icon-6 {
     background-image: url(../img/5-icon.png);
-    background-size: 85px 90px;
+}
+.software-screen-img {
+    display: block;
+    background-image: url(../img/software-screen.png);
+    background-repeat: no-repeat;
+    width: 932px;
+    height: 755px;
 }
 .page-software-icon {
     display: block;
@@ -377,7 +395,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: -28px 0;
     width: 127px;
-    height: 98px;
+    height: 755px;
 }
 .page-software-flex {
     display: flex;
@@ -496,7 +514,7 @@ h1 {
     position: relative;
 }
 .page-grid {
-    margin-top: 125px;
+    margin-top: 120px;
 }
 .page-company {
     background-image: url(../img/logofon.png);
@@ -508,7 +526,10 @@ h1 {
     background-color: #edf6ff;
 }
 .page-software {
-    padding: 109px 0 156px 0;
+    background-image: url(../img/software-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 .page-stat {
     padding: 116px 0 96px 0;
@@ -532,4 +553,5 @@ background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
 padding-top: 26px;
 padding-bottom: 29px;
+margin-top: 100px;
 }
