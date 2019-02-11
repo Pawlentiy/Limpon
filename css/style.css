@@ -418,6 +418,18 @@ h1 {
     overflow: hidden;
     overflow: scroll;
 }
+.page-software-list::-webkit-scrollbar {
+    width: 6px;
+}
+.page-software-list::-webkit-scrollbar-track {
+    background-color: #f3f6ff;
+    border-radius: 10px;
+}
+.page-software-list::-webkit-scrollbar-thumb {
+    background-color: #1085e4;
+    border-radius: 10px;
+    height: 5px;
+}
 .page-software-list dt {
     font-weight: 700;  
     color: #5a6789;  
@@ -529,7 +541,7 @@ h1 {
     background-color: #edf6ff;
 }
 .page-software {
-    background-image: url(../img/software-bg.png);
+    /*background-image: url(../img/software-bg.png);*/
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
