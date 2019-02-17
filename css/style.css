@@ -598,7 +598,7 @@ a.video-app {
     background-color: #edf6ff;
 }
 .page-software {
-    background-image: url(../img/software-bg.png);
+    /*background-image: url(../img/software-bg.png);*/
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
