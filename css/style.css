@@ -52,7 +52,7 @@ h1 {
     margin-bottom: 65px;
     }
 .page-stat .title-h2 {
-    max-width: 500;
+    max-width: 500px;
 }
 
 .wrap {
@@ -218,6 +218,9 @@ h1 {
     margin-top: 0;
     margin-bottom: 25px;
 }
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
 .page-subscribe-item h2 span {
     font-size: 14px;
     font-weight: 800;
@@ -329,7 +332,7 @@ h1 {
 }
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 5px #f4f4f4;
+    box-shadow: 0 9px 20px #f4f4f4;
     /*box-shadow: 0 0 5px red;*/
     max-width: 350px;
     max-height: 393px;
@@ -386,28 +389,32 @@ h1 {
     display: block;
     background-image: url(../img/software-screen.png);
     background-repeat: no-repeat;
-    width: 932px;
-    height: 755px;
+    width: 946px;
+    height: 760px;
     position: absolute;
     left: 0;
     
 }
-.page-software-icon {
+.settings-icon {
     display: block;
     background-image: url(../img/page-software-icon.png);
     background-repeat: no-repeat;
     background-position: -28px 0;
-    width: 127px;
-    height: 755px;
+    width: 117px;
+    height: 98px;
 }
 .page-software-flex {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
-.page-software-flex>div {
+.content-software {
     flex-basis: 55%;
 }
-.page-software-icon .title-h2 {
+.page-software-flex>div {
+    /*flex-basis: 85%;*/
+}
+.page-software-icon .title-h2, .page-analytics-text .title-h2 {
     max-width: 766px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -440,6 +447,58 @@ h1 {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.8;
+}
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c3d2dd;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+}
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -7px;
+}
+.page-app-list>li {
+    display: inline-block;
+}
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 77px;
+}
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;
+}
+.page-app-list>li>a.page-app-ios {
+    background-position: -190px 0;
+}
+.content-app {
+    width: 55%;
+}
+a.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-analytics>div, .flex-analytics2>div {
+    flex-basis: 53%;
+}
+.page-analytics-text {
+    margin-bottom: 54px;
+}
+.page-analytics2-text {
+    width: 604px;
 }
 .list-stat {
     display: flex;
@@ -519,10 +578,51 @@ h1 {
     line-height: 0px;
     margin-top: -7px;
 }
-
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+.page-clients .title-40{
+    letter-spacing: -2px;
+}
+.box-clients-item {
+    background-color: #fff;
+    padding: 20px 42px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+.box-clients-item .name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin: auto;
+    letter-spacing: -0.7px;
+}
+.box-clients-item .position {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1085e4;
+    margin: auto;
+}
+.box-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 19px;
+}
+.box-info>div {
+    padding-left: 19px;
+}
 /* PAGE */
 .page-header {
     background-image: url(../img/header-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 116px 0 330px 0;
@@ -533,6 +633,7 @@ h1 {
 }
 .page-company {
     background-image: url(../img/logofon.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 106px 0 99px;
@@ -541,12 +642,14 @@ h1 {
     background-color: #edf6ff;
 }
 .page-software {
-    /*background-image: url(../img/software-bg.png);*/
+    background-image: url(../img/software-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+    overflow: hidden;
 }
+
 .page-stat {
     padding: 116px 0 96px 0;
 }
@@ -554,7 +657,7 @@ h1 {
     text-align: center;
 }
 .page-screen {
-    padding: 116px 0 0 0;
+    padding: 83px 0 120px 0;
 }
 .page-subscribe{
 padding: 25px 0 28px 0;
@@ -570,4 +673,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 padding-top: 26px;
 padding-bottom: 29px;
 margin-top: 100px;
+}
+.page-app {
+    padding: 69px 0 82px 0;
+}
+.page-app .wrap {
+    position: relative;
+}
+.page-analytics {
+    background-image: url(../img/analytics.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    padding: 117px 0 137px 0;
+}
+.page-analytics2 {
+    background-image: url(../img/analytics2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 110px 0 132px 0;
+}
+.page-analytics2 h2 {
+    margin: 19px 0 27px 0;
+}
+.page-analytics2 p {
+    margin-bottom: 51px;
+} 
+.page-analytics2 .btn-primary {
+    padding: 20px 63px;
+}
+.page-clients {
+    padding-top: 42px;
+    position: relative;
+}
+.page-clients::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.page-clients .title-40 {
+    color: #fff;
+}  
+.page-clients .title-40 span {
+    color: #85c8ff;
 }
