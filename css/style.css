@@ -30,7 +30,7 @@ h1 {
     color: #1085e4;
     text-transform: uppercase;
     letter-spacing: 3px;    
-    margin-bottom: 50px;
+    margin-bottom: 12px;
 }
 .title-40 {
     font-size: 40px;
@@ -53,6 +53,7 @@ h1 {
     }
 .page-stat .title-h2 {
     max-width: 500px;
+    margin: 0 auto;
 }
 
 .wrap {
@@ -407,6 +408,8 @@ h1 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 114px;
+    margin-bottom: 111px;
 }
 .content-software {
     flex-basis: 55%;
@@ -630,7 +633,8 @@ a.video-app {
     flex-basis: 31.5%;
     box-shadow: 0 5px 6px #f4f4f4;
     position: relative;
-    padding: 193px 0 42px 0;
+    padding: 193px 31px 42px 31px;
+    box-sizing: border-box;
 }
 .box-team-item .avatar  {
     position: absolute;
@@ -654,18 +658,99 @@ a.video-app {
     margin-top: 8px;
     letter-spacing: -0.9px;
 }
-.box-team-item .btn-more {
-    background-color: #fff;
-    display: block;
+.box-team-item .btn-team {
+    background-color: #f3f3f3;
+    border-radius: 100%;
+    display: flex;
     margin: 0 auto;
     width: 50px;
     height: 50px;
-    background-image: url(../img/btn-more.png);
-    background-repeat: no-repeat;
     border: none;
+    padding: 0;
+    transition: 0.3s;
+}
+.box-team-item .btn-team:hover {
+    background-color: #1a88e1;
+}
+.box-team-item .btn-team span {
+    background-image: url(../img/btn-team.png);
+    display: block;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+.box-team-item .btn-more span {
+    background-position: -2px -1px;
+    width: 20px;
+    height: 21px;
+}
+.box-team-item .btn-more:hover span {
+    background-position: -2px -33px;
 }
 .box-team-item .btn-more:focus {
     outline: none;
+}
+.social-team {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.box-team-item .btn-fb span {
+    background-position: -22px 8px;
+    width: 20px;
+    height: 39px;
+}
+.box-team-item .btn-fb:hover span {
+    background-position: -22px -24px;
+}
+
+.box-team-item .btn-tw span {
+    background-position: -42px 9px;
+    width: 20px;
+    height: 39px;
+}
+.box-team-item .btn-tw:hover span {
+    background-position: -42px -23px
+}
+.box-team-item .btn-be span {
+    background-position: -67px 10px;
+    width: 20px;
+    height: 39px;
+}
+.box-team-item .btn-be:hover span {
+    background-position: -67px -22px
+}
+.box-team-item .btn-web span {
+    background-position: -90px 10px;
+    width: 20px;
+    height: 39px;
+}
+.box-team-item .btn-web:hover span {
+    background-position: -90px -22px
+}
+.object-circle  {
+    background-image: url(../img/circle-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    width: 413px;
+    height: 758px;
+    left: 0;
+    bottom: -363px;
+}
+.object-rhombus  {
+    background-image: url(../img/rhombus-gray.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    width: 569px;
+    height: 661px;
+    right: -13px;
+    top: -198px;
 }
 /* PAGE */
 .page-header {
@@ -688,6 +773,10 @@ a.video-app {
 }
 .page-stat, .page-screen {
     background-color: #edf6ff;
+}
+.page-stat {
+    padding 116px 0 96px 0;
+    position: relative;
 }
 .page-software {
     background-image: url(../img/software-bg.png);
